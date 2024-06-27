@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+.container .sign-up {
+  background-image: url("/img/waves.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 15px;
+  padding: 30px 15px;
+}
+.container .sign-up h2 {
+  font-size: 1.8em;
+}
+.container .sign-up h2, .container .sign-up p, .container .sign-up li {
+  max-width: 90%;
+  text-align: center;
+}
+.container .sign-up ul {
+  margin: 20px 0;
+  padding: 10px;
+  width: 80%;
+}
+.container .sign-up ul li {
+  margin: 10px 0;
+}
+.container .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0f0f;
+  gap: 20px;
+  padding: 30px;
+}
+.container .form .input-section * {
+  color: white;
+}
+.container .form h1 {
+  color: #2062b9;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 2.2em;
+}
+.container .form h1 strong {
+  color: white;
+}
+.container .form .input-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .form .input-section input {
+  background-color: transparent;
+  border: 1px solid rgba(238, 238, 238, 0.9333333333);
+  padding: 10px 15px;
+  border-radius: 20px;
+  width: 250px;
+  font-size: 1em;
+  background: linear-gradient(180deg, rgb(17, 17, 17) 30%, rgb(23, 23, 28) 100%);
+}
+.container .form .input-section span {
+  margin-left: 15px;
+  color: red;
+  max-width: 250px;
+}
+.container .form .btn {
+  background-color: #0a3164;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  width: 250px;
+  margin-top: 20px;
+  transition: 0.3s ease-in-out;
+}
+.container .form .btn:hover {
+  background-color: #174f97;
+}
+
+@media (max-width: 750px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .sign-up h2, .container .sign-up p, .container .sign-up ul, .container .sign-up li {
+    width: 100%;
+  }
+}
+.signed-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 30px;
+  color: white;
+  background-color: #3d3a3a;
+  text-transform: capitalize;
+}
+.signed-page img {
+  max-width: 400px;
+}/*# sourceMappingURL=style.css.map */

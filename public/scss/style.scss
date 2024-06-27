@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+
+    .sign-up {
+        background-image: url("/img/waves.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        gap: 15px;
+        padding: 30px 15px;
+
+        h2 {
+            font-size: 1.8em;
+        }
+
+        h2, p, li {
+            max-width: 90%;
+            text-align: center;
+        }
+
+        ul {
+            margin: 20px 0;
+            padding: 10px;
+            width: 80%;
+
+            li {
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #0f0f0f;
+        gap: 20px;
+        padding: 30px;
+
+        .input-section * {
+            color: white;
+        }
+
+        h1 {
+            strong {
+                color: white;
+            }
+            color: #2062b9;
+            margin-bottom: 20px;
+            cursor: pointer;
+            font-size: 2.2em;
+        }
+
+        .input-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            input {
+                background-color: transparent;
+                border: 1px solid #eeee;
+                padding: 10px 15px;
+                border-radius: 20px;
+                width: 250px;
+                font-size: 1em;
+                background: linear-gradient(180deg, rgba(17,17,17,1) 30%, rgba(23,23,28,1) 100%);
+            }
+
+            span {
+                margin-left: 15px;
+                color: red;
+                max-width: 250px;
+            }
+        }
+        .btn {
+            background-color: #0a3164;
+            padding: 10px;
+            border-radius: 20px;
+            color: white;
+            font-size: 1em;
+            font-weight: 500;
+            cursor: pointer;
+            width: 250px;
+            margin-top: 20px;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                background-color: #174f97;
+            }
+        }
+    }
+}
+
+@media(max-width: 750px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        .sign-up {
+            h2, p, ul,  li {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.signed-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 30px;
+    color: white;
+    background-color: #3d3a3a;
+    text-transform: capitalize;
+
+    img {
+        max-width: 400px;
+    }
+}
